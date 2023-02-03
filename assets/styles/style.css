@@ -1,0 +1,514 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Raleway:wght@400;700&display=swap');
+
+/* 
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Raleway', sans-serif;
+
+    color values:
+        #96746b
+        #c7a17a
+        #312a26
+        #fff (white)
+        #f2f2f2
+        #19100f
+    */
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Oswald', sans-serif;
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
+}
+
+.wrapper {
+    width: 100%;
+}
+
+
+/* Header section 1 */
+.nav {
+    /* border: 3px solid red; */
+    width: 85%;
+    margin: 1.5em auto;
+    overflow: auto;
+}
+
+.nav h1 a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: Oswald;
+    color: #96746b;
+    float: left;
+    margin-top: 1em auto;
+}
+
+.nav ul {
+    float: right;
+    margin: 1em auto;
+
+}
+
+.nav ul li {
+    /* border: 1px dashed blue; */
+    display: inline;
+}
+
+.nav ul li a {
+    /* border: 1px dashed darkgoldenrod; */
+    text-decoration: none;
+    color: #312a26;
+    font-family: sans-serif;
+    margin-left: 1em;
+    font-weight: 700;
+}
+/* end  Header section 1 */
+
+
+/* Banner Section 2 */
+.banner {
+    height: 670px;
+    background-image: url(../images/banner-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.banner-text {
+    /* border: 2px solid darkgoldenrod; */
+    position: absolute;
+    top: 50%;
+    left: 7.5%;
+    transform: translate(0,-50%);
+}
+
+.banner-text h2 {
+    color: #c7a17a;
+    font-size:3.5em;
+    text-transform: uppercase;
+
+}
+
+.banner-text h2 span {
+    color: #96746b;
+}
+
+.banner-text p {
+    color: white;
+}
+
+.banner-text a {
+    /* border: 2px solid red; */
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Raleway',sans-serif;
+    background-color: #312a26;
+    padding: 1em;
+    font-weight: 700;
+    margin-top: 1em;
+    display: inline-block;
+}  
+/* end Banner Section 2 */
+
+
+/* ads Section 3  */
+.ads {
+    width: 85%;
+    margin: 4em auto;
+    overflow: auto;
+}
+.ads-img1 {
+    background-image: url(../images/ads-img1.jpg);
+    margin-right: 2%;
+}
+.ads-img2 {
+    background-image: url(../images/ads-img2.jpg);
+}
+.ads-items {
+    height: 350px;
+    width: 48%;
+    background-size: cover;
+    background-position: center;
+    float: left;
+    position: relative;  
+}
+
+.ads-items:nth-child(2) {
+    margin-left: 2%;
+}
+
+.ads-text {
+    /* border: 2px dashed darkgoldenrod; */
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(0,-50%);
+    width: 45%;
+}
+
+.ads-text h3 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 2em;
+    text-shadow: 3px 3px 6px #312a26;
+    line-height: 1.2em;
+    margin-bottom: 0.5em;
+}
+
+.ads-text a {
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Raleway',sans-serif;
+    font-weight: 700;
+    display: inline;
+    margin-top: 1em;
+}
+/* end ads Section 3 */
+
+
+/* Merchandise Section 4 */
+.merch {
+    width: 85%;
+    margin: 4em auto;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+
+.merch .section-header span {
+    color: #c7a17a;
+    font-style: italic;
+    font-family: 'Raleway',sans-serif;
+    font-weight: 500;
+}
+
+.merch .section-header h2 {
+    text-transform: uppercase;
+    color: #312a26;
+    font-size: 1.5em;
+    font-family: 'oswald',sans-serif;
+}
+
+hr {
+    width: 32%;
+    height: 2px;
+    background-color: #c7a17a;
+    /* border: none; */
+    margin: auto;
+}
+
+.merch-gallery {
+    overflow: auto;
+}
+
+.merch-gallery img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    /* remove streched image */
+}
+
+.merch-items {
+    width: 24%;
+    float: left;
+    margin-right: 1.33%;
+    margin-top: 1.5em;
+}
+
+.merch-items:nth-child(4),
+.merch-items:nth-child(8) {
+    margin-right: 0;
+}
+/* end Merchandise Section 4 */
+
+
+/* discount Section 5 */
+.discount {
+    background-image: url(../images/discount-img.jpg);
+    width: 85%;
+    height: 350px;
+    margin-left: 7.5%;
+    /* = margin: 4em auto; */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.discount-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.discount-text span {
+    color: white;
+    font-style: italic;
+    font-family: 'Raleway',sans-serif;
+    text-shadow: 3px 3px 6px #312a26;
+}
+
+.discount-text h2 {
+    color: white;
+    font-size: 2em;
+    text-shadow: 3px 3px 6px #312a26;
+}
+
+.discount-text a {
+    text-decoration: none;
+    color: #312a26;
+    font-family: 'Raleway',sans-serif;
+    background-color: #fff;
+    opacity: 0.5;
+    padding: 1em;
+    font-weight: 700;
+    margin-top: 1em;
+    display: inline-block;
+}
+/* end Discount Section 5 */
+
+
+/* Discount Sale Section 6 */
+.merchsale {
+    width: 23%;
+    height: 2px;
+    background-color: #c7a17a;
+    margin: auto;
+}
+/* end Discount Sale Section 6 */
+
+
+/* ads2 Section 7 */
+.ads-img3 {
+    background-image: url(../images/ads-img3.jpg);
+    margin-right: 2%;
+}
+.ads-img4 {
+    background-image: url(../images/ads-img4.jpg);
+}
+
+.ads-img5 {
+    background-image: url(../images/ads-img5.jpg);
+    margin-right: 2%;
+}
+.ads-img6 {
+    background-image: url(../images/ads-img6.jpg);
+    margin-left: 2%;
+}
+
+.ads-items:nth-child(3),
+.ads-items:nth-child(4) {
+    margin-top: 4%;
+}
+/* end ads2 Section 7 */
+
+
+/* Reservation section 8 */
+.reservation {
+    width: 85%;
+    margin: 4em auto;
+}
+
+.reservation .section-header h2 {
+    text-transform: uppercase;
+    color: #312a26;
+    font-size: 1.5em;
+    font-family: 'oswald',sans-serif;
+}
+
+.reserveline {
+    width: 22%;
+    height: 2px;
+    background-color: #c7a17a;
+    margin: auto;
+}
+
+form {
+    overflow: auto;
+}
+
+.form-group {
+    height: 650px;
+    width: 49%;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    float: left;
+    padding: 2em;
+    margin-right: 1%;
+}
+
+.form-group:nth-child(2) {
+    margin-right: 0;
+}
+
+form input,
+form label,
+form select,
+form textarea {
+    font-family: 'Raleway',sans-serif;
+    width: 100%;
+    padding: 1em;
+    margin-bottom: .5em;
+    display: inline-block;
+}
+
+form label {
+    font-weight: 700;
+    padding: 0;
+}
+
+form p {
+    text-align: center;
+    font-weight: 700;
+    margin: 1em;
+}
+
+.res-time {
+    text-align: center;
+}
+
+.res-time * {
+    width: auto;
+}
+
+form h3 {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+form h3::after {
+    content: "";
+    display: block;
+    height: 30px;
+    width: 150px;
+    background-image: url(../images/reservation-cards.png);
+    background-size: contain;
+    background-position: center;
+    /* margin-right: auto;
+    margin-left: auto; */
+    margin: auto;
+}
+
+.res-agreement * {
+    width: auto;
+}
+
+.send-btn {
+    background-color: #c7a17a;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+/* end Reservation section 8 */
+
+
+/* Footer Section 9 */
+.footer {
+    background-image: url(../images/footer-img.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    
+}
+.footer-contents {
+    width: 85%;
+    margin: auto;
+    overflow: auto;
+    color: white;
+}
+
+.footer-widgets {
+    float: left;
+    margin-right: 5%;
+}
+
+.footer-widgets h3 {
+    margin: 1.5em auto;
+}
+
+.footer-widgets table {
+    font-family: 'Raleway',sans-serif;
+    color: white;
+}
+
+.footer-widgets p,
+ table {
+    color: #c7a17a;
+    font-size: 85%;
+}
+
+.form {
+    float: left;
+    width: 50%;
+    height: 35px;
+    display: inline;
+}
+
+#form-text {
+    width: 65%;
+    height: 35px;
+}
+
+#search-btn {
+    width: auto;
+    height: auto;
+    font-size: 70%;
+    font-weight: 700;
+    background-color: #c7a17a;
+}
+/* end Footer Section 9 */
+
+
+/* Footer Section 10 */
+.footer-social {
+    width: 100%;
+    background-color: #19100f;
+    color: white;
+    height: 4em;
+    display: inline-block;
+    overflow: auto;
+}
+
+.social-widgets {
+    width: 33.33%;
+    height: 3em;
+    float: left;
+    text-align: center;
+    padding: 1em;
+}
+
+.social-widgets a img {
+    width: 1.5em;
+    height: 1.5em;
+    text-decoration: none;
+}
+/* end Footer Section 10 */
+
+#page-top {
+    position: fixed;
+    bottom: 0;
+    display: block;
+    padding: 1em;
+    right: 2%;
+    background-color: #96746b;
+    color: white;
+    font-family: 'Raleway',sans-serif;
+    font-size: 0.6em;
+    text-decoration: none;
+}
